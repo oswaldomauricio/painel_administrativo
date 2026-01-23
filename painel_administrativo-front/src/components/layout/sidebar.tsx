@@ -103,22 +103,18 @@ export function Sidebar() {
 
   return (
     <SidebarWrapper side="left">
-      <SidebarHeader className="flex items-start justify-between">
+      <SidebarHeader className="flex items-center justify-between">
         <Link
           href="/"
           className="w-fit flex text-foreground font-black p-2 pb-0 mb-2"
           onClick={() => isMobile && setOpenMobile(!openMobile)}
         >
           <Image
-            // src="/images/icons/norteautopecas.svg"
-            src="/images/icons/modul_logo.png"
+            src="/images/icons/norteautopecas.svg"
             alt=""
-            height={60}
-            width={60}
+            height={120}
+            width={120}
           />
-          <span className="pl-4 text-xl font-bold text-[#fff]">
-            MODUL GARANTIA
-          </span>
         </Link>
         <CommandMenu buttonClassName="max-w-full" />
       </SidebarHeader>

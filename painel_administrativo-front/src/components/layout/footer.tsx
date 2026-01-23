@@ -16,7 +16,7 @@ export function Footer() {
             rel="noopener noreferrer"
             className={cn(buttonVariants({ variant: "link" }), "inline p-0")}
           >
-            Modul Tecnologia
+            Norte Auto Pecas
           </a>
           .
         </p>

@@ -5,24 +5,19 @@ export const navigationsData: NavigationType[] = [
     title: "Painel",
     items: [
       {
-        title: "Inicio",
+        title: "Dashboard",
         href: "/dashboard",
-        iconName: "House",
-      },
-      {
-        title: "Garantia",
-        href: "/dashboard/garantias",
-        iconName: "Wrench",
-      },
-      {
-        title: "Divergências",
-        href: "/dashboard/divergencias",
         iconName: "Package",
       },
       // {
-      //   title: "Caixa",
-      //   href: "/dashboard/caixa",
-      //   iconName: "PackageOpen",
+      //   title: "Garantia",
+      //   href: "/garantias",
+      //   iconName: "Package",
+      // },
+      // {
+      //   title: "divergências",
+      //   href: "/divergencias",
+      //   iconName: "Package",
       // },
     ],
   },
