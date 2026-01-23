@@ -1,6 +1,7 @@
 "use client"
 
 import { redirect } from "next/navigation"
+// import { Package, PackageOpen, Wrench } from "lucide-react"
 import { Package, Wrench } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -23,6 +24,13 @@ export default function HomePage() {
           <Package className="me-2 size-20" aria-hidden />
           <p className="text-xl">DIVERGÊNCIAS</p>
         </Button>
+        {/* <Button
+          className="bg-foreground text-white hover:bg-primary focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 rounded-md px-4 py-2 h-60 w-60 flex flex-col items-center justify-center gap-y-2"
+          onClick={() => redirect("/dashboard/caixa")}
+        >
+          <PackageOpen className="me-2 size-20" aria-hidden />
+          <p className="text-xl">CAIXAS</p>
+        </Button> */}
       </div>
     </div>
   )

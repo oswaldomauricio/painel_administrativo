@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { getSession, signIn } from "next-auth/react"
 import { useForm } from "react-hook-form"
@@ -63,13 +64,21 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6 w-dvw">
       <Card className="w-full max-w-md p-6">
-        <CardHeader className="text-center">
-          <CardTitle className="text-2xl font-bold text-gray-900">
-            Login
+        <CardHeader className="flex flex-col items-center text-center">
+          <div className="flex flex-row items-center gap-2 ">
+            <Image
+              src="/images/icons/modul_logo.png"
+              alt="Logo"
+              width={100}
+              height={100}
+            />
+            <span className="text-xl font-bold text-[#4300e8]">
+              MODUL GARANTIA
+            </span>
+          </div>
+          <CardTitle className="text-2xl font-bold text-gray-600 mt-4">
+            GERENCIAMENTO DE GARANTIAS E DIVERGÊNCIAS.
           </CardTitle>
-          <p className="text-gray-600 mt-2">
-            Painel Administrativo - Norte Auto Peças
-          </p>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
